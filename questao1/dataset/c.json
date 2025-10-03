@@ -1,0 +1,23 @@
+{
+  "spec_version": "1.0",
+  "challenge_id": "arrival_burst_explosion",
+  "metadata": {
+    "context_switch_cost": 1,
+    "throughput_window_T": 120,
+    "algorithms": ["FCFS", "SJF", "RR"],
+    "rr_quantums": [1, 2, 4, 8]
+  },
+  "workload": {
+    "time_unit": "ticks",
+    "processes": [
+      { "pid": "P01", "arrival_time": 0, "burst_time": 20 },
+      { "pid": "P02", "arrival_time": 0, "burst_time": 2 },
+      { "pid": "P03", "arrival_time": 0, "burst_time": 3 },
+      { "pid": "P04", "arrival_time": 0, "burst_time": 1 },
+      { "pid": "P05", "arrival_time": 0, "burst_time": 15 },
+      { "pid": "P06", "arrival_time": 1, "burst_time": 4 },
+      { "pid": "P07", "arrival_time": 1, "burst_time": 6 },
+      { "pid": "P08", "arrival_time": 2, "burst_time": 5 }
+    ]
+  }
+}
